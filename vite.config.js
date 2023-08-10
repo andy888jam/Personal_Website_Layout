@@ -25,7 +25,7 @@ function moveOutputPlugin() {
 export default defineConfig({
   // base 的寫法：
   // base: '/Repository 的名稱/'
-  base: '/web-layout-training-vite/',
+  base: '/Personal_Website_Layout/',
   plugins: [
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
     ViteEjsPlugin(),
@@ -40,8 +40,11 @@ export default defineConfig({
       input: Object.fromEntries(
         glob
           .sync('pages/**/*.html')
-          .map((file) => [
-            path.relative('pages', file.slice(0, file.length - path.extname(file).length)),
+          .map(file => [
+            path.relative(
+              'pages',
+              file.slice(0, file.length - path.extname(file).length)
+            ),
             fileURLToPath(new URL(file, import.meta.url)),
           ])
       ),
