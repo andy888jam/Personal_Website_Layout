@@ -1,0 +1,40 @@
+.bg-image {
+  max-width: 100%;
+  background-image: url('../../../assets/images/background-img.png');
+}
+
+.introduction {
+  width: 526px;
+}
+
+.cards {
+  width: 636px;
+}
+
+.about-me {
+  width: 526px;
+}
+
+.card {
+  border: 1px solid #e3e3e3;
+  padding: 16px;
+  width: calc(50% - 12px);
+}
+
+.icon {
+  border-radius: 40px;
+  width: 162px;
+  height: 162px;
+  object-fit: cover;
+  &:hover {
+    box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
+  }
+}
+
+.contact-me {
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+
+.project-title {
+  width: 746px;
+}
